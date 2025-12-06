@@ -30,6 +30,15 @@ Content-Type: application/json
     "email": "bestfriend@salmon.com"
 }
 ###
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+    "password": "test12345",
+    "email": "bestfriend@salmon.com",
+    "expires_in_seconds": 2
+}
+###
 POST http://localhost:8080/api/chirps
 Content-Type: application/json
 
