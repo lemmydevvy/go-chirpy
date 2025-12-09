@@ -30,6 +30,22 @@ Content-Type: application/json
     "email": "bestfriend@salmon.com"
 }
 ###
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "password": "thelongroad",
+    "email": "nelsom@freedom.com"
+}
+###
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+    "password": "thelongroad",
+    "email": "nelsom@freedom.com"
+}
+###
 POST http://localhost:8080/api/login
 Content-Type: application/json
 
@@ -41,18 +57,20 @@ Content-Type: application/json
 ###
 POST http://localhost:8080/api/chirps
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjaGlycHkiLCJzdWIiOiIzZmYwZGI3ZC0xYzZhLTQzM2YtOWU5Yi0yNjEzY2Y5N2Q2NzYiLCJleHAiOjE3NjUyNDA0MTIsImlhdCI6MTc2NTIzNjgxMn0.Jl7HmU2R8LdzwWwMvWzkboQifDFUKnX0J8VWYCfScYs
 
 {
     "body": "Hello, World!",
-    "user_id": "7d9e7fef-19f1-44b5-84ce-833ef310a212"
+    "user_id": "18aec5e6-41ee-4e6e-831a-c110828ba306"
 }
 ###
 POST http://localhost:8080/api/chirps
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjaGlycHkiLCJzdWIiOiIzZmYwZGI3ZC0xYzZhLTQzM2YtOWU5Yi0yNjEzY2Y5N2Q2NzYiLCJleHAiOjE3NjUyNDA0MTIsImlhdCI6MTc2NTIzNjgxMn0.Jl7HmU2R8LdzwWwMvWzkboQifDFUKnX0J8VWYCfScYs
 
 {
     "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, explicabo quas a labore repellendus, laboriosam veritatis suscipit consequuntur dicta eos ipsam ea, unde tempora voluptatem dignissimos ratione mollitia eum reiciendis. A atque itaque minima! Modi sapiente eligendi, cum sed consequuntur quas aspernatur culpa iste molestias facere inventore, corporis molestiae earum numquam, unde praesentium ducimus incidunt? Corrupti optio blanditiis vitae eos a laboriosam porro laborum natus nulla molestias itaque ipsam error facilis vero explicabo rerum deleniti enim sapiente accusamus odio, amet tempore laudantium. Esse delectus numquam totam quae ipsa saepe, molestiae tempora libero nisi dolorem dolorum iste, natus, doloremque a velit eos officia aperiam debitis expedita consequatur adipisci nam iure.",
-    "user_id": "7d9e7fef-19f1-44b5-84ce-833ef310a212"
+    "user_id": "18aec5e6-41ee-4e6e-831a-c110828ba306"
 }
 ###
 POST http://localhost:8080/api/chirps
@@ -60,7 +78,7 @@ Content-Type: application/json
 
 {
     "body": "kerfuffle sharbert fornax this is what I say",
-    "user_id": "7d9e7fef-19f1-44b5-84ce-833ef310a212"
+    "user_id": "18aec5e6-41ee-4e6e-831a-c110828ba306"
 }
 ###
 POST http://localhost:8080/api/chirps
@@ -68,7 +86,7 @@ Content-Type: application/json
 
 {
     "body": "kerfuffle! sharbert! fornax! this is what I really want to say!",
-    "user_id": "7d9e7fef-19f1-44b5-84ce-833ef310a212"
+    "user_id": "18aec5e6-41ee-4e6e-831a-c110828ba306"
 }
 ###
 POST http://localhost:8080/api/chirps
@@ -76,7 +94,7 @@ Content-Type: application/json
 
 {
     "body": "I wonder how much I need to make a living?",
-    "user_id": "7d9e7fef-19f1-44b5-84ce-833ef310a212"
+    "user_id": "18aec5e6-41ee-4e6e-831a-c110828ba306"
 }
 ###
 GET http://localhost:8080/api/chirps
@@ -84,4 +102,5 @@ GET http://localhost:8080/api/chirps
 GET http://localhost:8080/api/chirps/caa7f570-2907-46d3-b35e-db01ca936a1d
 
 ###
-GET http://localhost:8080/api/chirps/caa7f570-2907-46d3-b35e-db00ca825a2d
+DELETE http://localhost:8080/api/chirps/aaf7774d-47d6-40c1-b6e8-776f465507d8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjaGlycHkiLCJzdWIiOiIwMTkwZmY2MC0wZWU4LTQ0MzUtODI4NS03YmQwZTg4ZjQwMTciLCJleHAiOjE3NjUyNDA1NDksImlhdCI6MTc2NTIzNjk0OX0.2kVS2r3v_wW4jtNIb6bYFbr3NgAoUA4UCCMcTzpcPOE
